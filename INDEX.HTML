@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with JavaScript</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body, .jumbotron { padding: 30px; }
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>This is my site </h1>
+  <div type="button" class="btn btn-primary" onclick="changeText()">
+    Please change the text
+  </div>
+</div>
+  <!-- start javascript -->
+  <script>
+    const header = document.querySelector('h1');
+    
+    function changeText()
+    {
+      header.innerText = 'Otro peo distinto';
+      
+    }
+    
+  </script>
+</body>
+</html>
